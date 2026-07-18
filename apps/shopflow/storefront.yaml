@@ -17,9 +17,9 @@ spec:
           # EDIT: your ECR registry.
           image: 071231919766.dkr.ecr.us-east-1.amazonaws.com/shopflow-storefront:1.0
           ports:
-            - containerPort: 80
+            - containerPort: 8080
           readinessProbe:
-            httpGet: { path: /, port: 80 }
+            httpGet: { path: /, port: 8080 }
             initialDelaySeconds: 5
             periodSeconds: 10
 ---
@@ -32,4 +32,4 @@ spec:
     app: storefront
   ports:
     - port: 80
-      targetPort: 80
+      targetPort: 8080
