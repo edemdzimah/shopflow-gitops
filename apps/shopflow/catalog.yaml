@@ -17,7 +17,7 @@ spec:
           # THIS LINE IS THE DEPLOY. Jenkins updates this tag and commits;
           # ArgoCD sees the commit and rolls out the new version.
           # EDIT: your ECR registry.
-          image: 071231919766.dkr.ecr.us-east-1.amazonaws.com/shopflow-catalog:build-4
+          image: 071231919766.dkr.ecr.us-east-1.amazonaws.com/shopflow-catalog:does-not-exist
           ports:
             - containerPort: 8080
           env:
